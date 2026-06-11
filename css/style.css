@@ -1,0 +1,1085 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Cormorant Garamond',serif;
+    background:
+
+linear-gradient(
+180deg,
+#fffefc 0%,
+#faf7f2 100%
+);
+    overflow-x:hidden;
+}
+
+.hero{
+
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero-flower-left,
+.hero-flower-right{
+    position:absolute;
+
+    width:260px;
+
+    height:auto;
+
+    opacity:.75;
+
+    z-index:3;
+
+    pointer-events:none;
+}
+
+.hero-flower-left{
+
+    top:40px;
+    left:30px;
+}
+
+.hero-flower-right{
+
+    top:40px;
+    right:30px;
+}
+.hero-bg{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(55%);
+}
+
+.overlay{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:white;
+    width:90%;
+}
+
+.overlay h3{
+    font-size:clamp(1rem, 2vw, 2rem);
+    margin-bottom:5px;
+}
+
+.overlay p{
+    margin-bottom:30px;
+}
+
+.overlay h1{
+
+    font-family:
+    'Great Vibes',
+    cursive;
+
+    font-size:5rem;
+
+    color:#d4af37;
+    text-shadow:
+0 0 8px rgba(212,175,55,.35);
+
+    font-weight:400;
+}
+
+.overlay h2{
+
+    font-family:
+    'Cinzel',
+    serif;
+
+    letter-spacing:3px;
+}
+
+.btn{
+    margin-top:30px;
+    padding:15px 40px;
+    border:none;
+    border-radius:8px;
+    background:#d4af37;
+    color:white;
+    font-size:1.1rem;
+    cursor:pointer;
+    border-radius:50px;
+
+    box-shadow:
+    0 10px 25px rgba(212,175,55,.35);
+}
+
+#countdown{
+    padding:80px 20px;
+    text-align:center;
+    background:white;
+}
+
+#countdown h2{
+    color:#d4af37;
+    margin-bottom:40px;
+    font-size:2.5rem;
+}
+
+.countdown-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.time-box{
+    width:140px;
+    padding:20px;
+    border:2px solid #d4af37;
+    border-radius:15px;
+}
+
+.time-box span{
+    font-size:3rem;
+    font-weight:bold;
+    color:#d4af37;
+}
+
+.time-box p{
+    margin-top:10px;
+}
+
+#mensaje{
+    background:#fdfbf7;
+    padding:80px 30px;
+    text-align:center;
+}
+
+.mensaje-container{
+    max-width:800px;
+    margin:auto;
+}
+
+#mensaje h2{
+    color:#d4af37;
+    margin-bottom:30px;
+    font-size:2.5rem;
+}
+
+#mensaje p{
+    font-size:1.3rem;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+#evento{
+
+    padding:80px 20px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+
+    background:white;
+}
+
+.evento-card{
+
+    width:400px;
+
+    padding:40px;
+
+    text-align:center;
+
+    border:2px solid #d4af37;
+
+    border-radius:20px;
+
+    background:white;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.evento-card h2{
+
+    color:#d4af37;
+
+    margin-bottom:20px;
+}
+
+.evento-card h3{
+
+    margin-bottom:15px;
+}
+
+.evento-card p{
+
+    margin-bottom:10px;
+}
+
+.evento-card a{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    background:#d4af37;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+}
+
+#galeria{
+
+    padding:100px 20px;
+
+    background:#fdfbf7;
+
+    text-align:center;
+}
+
+#galeria h2{
+
+    color:#d4af37;
+
+    font-size:2.5rem;
+
+    margin-bottom:40px;
+}
+
+.gallery-slider{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:20px;
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.gallery-track{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:20px;
+
+    width:100%;
+}
+
+.gallery-track img{
+
+    width:100%;
+
+    height:450px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,.15);
+}
+
+.gallery-btn{
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#d4af37;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+}
+
+.gallery-dots{
+
+    margin-top:30px;
+}
+
+.gallery-dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    display:inline-block;
+
+    margin:0 5px;
+
+    background:#ccc;
+}
+
+.gallery-dot.active{
+
+    background:#d4af37;
+}
+
+@media(max-width:768px){
+
+    .gallery-track{
+
+        grid-template-columns:1fr;
+    }
+
+    .gallery-track img{
+
+        height:500px;
+    }
+
+}
+
+#lightbox{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.95);
+
+    z-index:9999;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+#lightbox-img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    border-radius:15px;
+}
+
+#close-lightbox{
+
+    position:absolute;
+
+    top:20px;
+
+    right:30px;
+
+    color:white;
+
+    font-size:50px;
+
+    cursor:pointer;
+}
+
+#vestimenta,
+#regalos,
+#fotos-evento{
+
+    padding:100px 20px;
+
+    text-align:center;
+}
+
+#vestimenta{
+
+    background:#fdfbf7;
+}
+
+#regalos{
+
+    background:white;
+}
+
+#fotos-evento{
+
+    background:#fdfbf7;
+}
+
+#vestimenta h2,
+#regalos h2,
+#fotos-evento h2{
+
+    color:#d4af37;
+
+    margin-bottom:30px;
+
+    font-size:2.5rem;
+}
+
+.dress-card{
+    transition:.4s;
+
+    max-width:600px;
+
+    margin:auto;
+
+    padding:40px;
+
+    border:2px solid #d4af37;
+
+    border-radius:20px;
+
+    background:white;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.dress-card h3{
+
+    margin-bottom:15px;
+}
+
+.gift-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.gift-card{
+
+    transition:.4s;
+
+    width:320px;
+
+    padding:50px 40px;
+
+    border:1px solid #d4af37;
+
+    border-radius:30px;
+
+    background:white;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.05);
+
+    position:relative;
+}
+
+.gift-card a{
+
+        display:inline-block;
+
+    margin-top:25px;
+
+    padding:14px 30px;
+
+    background:#d4af37;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    transition:.3s;
+}
+
+.dress-card:hover,
+.gift-card:hover{
+  transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 35px rgba(212,175,55,.15);
+
+    background:#fffdfa;
+}
+
+.qr-photo{
+
+    width:250px;
+
+    margin-top:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+#music-btn{
+
+    position:fixed;
+
+    bottom:25px;
+
+    right:25px;
+
+    z-index:9999;
+
+    background:#d4af37;
+
+    color:white;
+
+    border:none;
+
+    border-radius:50px;
+
+    padding:15px 25px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.25);
+
+    transition:.3s;
+}
+
+#music-btn:hover{
+
+    transform:scale(1.05);
+}
+
+.divider{
+
+    text-align:center;
+
+    color:#d4af37;
+
+    font-size:28px;
+
+    margin:20px 0;
+}
+
+#eventos{
+
+    padding:120px 20px;
+
+    text-align:center;
+
+    background:#fffefc;
+}
+
+#eventos h2{
+
+    margin-bottom:60px;
+}
+
+.eventos-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+}
+
+.evento{
+
+    flex:1;
+
+    min-width:320px;
+
+    max-width:450px;
+
+    background:white;
+
+    border:1px solid #d4af37;
+
+    border-radius:30px;
+
+    padding:50px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.05);
+
+    transition:.4s;
+}
+
+.evento:hover{
+
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.10);
+}
+
+.icono-evento{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+}
+
+.evento h3{
+
+    color:#d4af37;
+
+    font-family:'Cinzel', serif;
+
+    margin-bottom:15px;
+}
+
+.evento h4{
+
+    font-family:
+    'Cormorant Garamond',
+    serif;
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+}
+
+.evento p{
+
+    margin-bottom:10px;
+
+    font-size:1.1rem;
+}
+
+.btn-evento{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:12px 30px;
+
+    background:#d4af37;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    transition:.3s;
+}
+
+.btn-evento:hover{
+
+    transform:scale(1.05);
+}
+
+.event-divider{
+
+  color:#d4af37;
+    opacity:.6;
+    font-size:1.5rem;
+}
+
+.dress-subtitle{
+
+    margin-bottom:20px;
+
+    font-size:1.1rem;
+}
+
+.dress-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:30px;
+
+    margin-top:40px;
+}
+
+.dress-item{
+
+    width:220px;
+
+    text-align:center;
+
+    flex-shrink:0;
+}
+
+.dress-icon{
+
+    font-size:70px;
+
+    margin-bottom:15px;
+}
+
+.dress-divider{
+
+    color:#d4af37;
+
+    font-size:2rem;
+
+    align-self:center;
+
+    position:absolute;
+
+    left:50%;
+
+
+    transform:translateX(-50%);
+    
+    opacity:.6;
+
+}
+
+.dress-item h4{
+
+    color:#d4af37;
+
+    font-family:'Cinzel', serif;
+
+    margin-bottom:10px;
+}
+
+.gift-intro{
+
+    max-width:700px;
+
+    margin:0 auto 50px auto;
+
+    text-align:center;
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+}
+
+.gift-icon{
+
+    font-size:70px;
+
+    margin-bottom:25px;
+}
+
+.gift-card h3{
+
+    color:#d4af37;
+
+    font-family:'Cinzel', serif;
+
+    margin-bottom:20px;
+}
+
+
+.ornament{
+
+    text-align:center;
+
+    color:#d4af37;
+
+    font-size:1.4rem;
+
+    margin-bottom:20px;
+
+    letter-spacing:10px;
+}
+
+.dress-divider{
+
+    color:#d4af37;
+
+    font-size:2rem;
+
+    align-self:center;
+
+    margin-top:-20px;
+}
+
+.dress-photo{
+
+    width:160px;
+
+    height:auto;
+
+    margin-bottom:5px;
+
+    filter:
+    sepia(100%)
+    saturate(500%)
+    hue-rotate(5deg)
+    brightness(1.1);
+
+}
+
+.dress-photo-man{
+    width:170px;
+}
+
+.dress-photo-woman{
+    width:170px;
+}
+
+.bride-photo{
+
+   transform:translateY(-25px);
+}
+
+.dress-note{
+    font-style:italic;
+    color:#c8a23a;
+    font-size:1.1rem;
+}
+.dress-line{
+    width:120px;
+    height:1px;
+    background:#d4af37;
+    margin:15px auto 25px auto;
+}
+
+#rsvp{
+
+    padding:100px 20px;
+
+    text-align:center;
+
+    background:white;
+}
+
+#rsvp h2{
+
+    color:#d4af37;
+
+    font-size:2.8rem;
+
+    margin-bottom:25px;
+}
+
+.rsvp-text{
+
+    max-width:700px;
+
+    margin:0 auto 50px auto;
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+}
+
+.rsvp-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+}
+
+.rsvp-btn{
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.yes-btn{
+
+    background:#d4af37;
+
+    color:white;
+}
+
+.no-btn{
+
+    background:white;
+
+    color:#b38b2d;
+
+    border:2px solid #d4af37;
+}
+
+.rsvp-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.rsvp-text{
+
+    max-width:550px;
+
+    margin:0 auto 50px auto;
+
+    line-height:1.8;
+}
+
+.title-line{
+
+    width:120px;
+
+    height:1px;
+
+    background:#d4af37;
+
+    margin:20px auto 35px auto;
+}
+
+#invitado-info{
+
+    padding:100px 20px;
+
+    text-align:center;
+
+    background:#fdfbf7;
+}
+
+.guest-card{
+
+    max-width:600px;
+
+    margin:auto;
+
+    padding:40px;
+
+    border:1px solid #d4af37;
+
+    border-radius:30px;
+
+    background:white;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.05);
+}
+
+#guest-name{
+
+    color:#d4af37;
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+}
+
+#guest-passes{
+
+    font-size:1.3rem;
+}
+
+#rsvp-status{
+
+    text-align:center;
+
+    margin-top:40px;
+}
+
+.rsvp-message{
+
+    color:#666;
+
+    font-size:1.15rem;
+
+    margin-bottom:20px;
+
+    font-style:italic;
+}
+
+.change-btn{
+
+    background:white;
+
+    color:#d4af37;
+
+    border:2px solid #d4af37;
+
+    padding:12px 30px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:1.1rem;
+
+    transition:.3s;
+}
+
+.change-btn:hover{
+
+    background:#d4af37;
+
+    color:white;
+}
+
+#hero-guest{
+
+    margin:20px 0;
+
+    font-size:1.8rem;
+
+    color:white;
+
+    font-style:italic;
+
+    letter-spacing:1px;
+
+    opacity:.95;
+}
+
+
+#hero-guest{
+
+    font-size:2rem;
+
+    color:#d4af37;
+
+    margin-top:5px;
+}

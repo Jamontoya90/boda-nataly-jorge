@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nataly & Jorge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<section class="hero">
+
+    <img src="img/floral-left.png"
+         class="hero-flower-left">
+
+    <img src="img/floral-right.png"
+         class="hero-flower-right">
+
+
+<img
+src="Fotos/Foto1.jpg"
+class="hero-bg"
+alt="Nataly y Jorge">
+
+    <div class="overlay">
+
+
+        <h3>Lo que Dios ha unido,
+        que no lo separe el hombre</h3>
+
+        <p>Mateo 19:6</p>
+
+        <h1>Nataly & Jorge</h1>
+
+        <p id="hero-guest">
+
+        Invitación para nuestros seres queridos
+
+        </p>
+        
+        <h2>20 de Noviembre de 2026</h2>
+
+        <div class="divider">
+
+        ♥
+
+        </div>
+        <button class="btn" onclick="verInvitacion()">
+        Ver Invitación
+        </button>
+    </div>
+
+</section>
+
+<section id="countdown">
+    
+    <div class="ornament">
+
+    ✦ ♥ ✦
+
+    </div>
+
+    <h2>Faltan</h2>
+
+    <div class="countdown-container">
+
+        <div class="time-box">
+            <span id="days">0</span>
+            <p>Días</p>
+        </div>
+
+        <div class="time-box">
+            <span id="hours">0</span>
+            <p>Horas</p>
+        </div>
+
+        <div class="time-box">
+            <span id="minutes">0</span>
+            <p>Minutos</p>
+        </div>
+
+        <div class="time-box">
+            <span id="seconds">0</span>
+            <p>Segundos</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="mensaje">
+<div class="ornament">
+
+    ✦ ♥ ✦
+
+</div>
+    <div class="mensaje-container">
+
+        <h2>Con la bendición de Dios</h2>
+
+        <p>
+            Con la bendición de Dios y de nuestras familias,
+            hemos decidido unir nuestras vidas en el sacramento
+            del matrimonio.
+        </p>
+
+        <p>
+            Nos llenaría de alegría contar con tu presencia
+            en este día tan especial.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="eventos">
+<div class="ornament">
+
+    ✦ ♥ ✦
+
+</div>
+    <h2>Nuestro Gran Día</h2>
+
+    <div class="eventos-container">
+
+        <div class="evento">
+
+            <div class="icono-evento">
+                ⛪
+            </div>
+
+            <h3>Ceremonia Religiosa</h3>
+
+            <h4>Santuario de Guadalupe</h4>
+
+            <p>20 de Noviembre de 2026</p>
+
+            <p>6:00 PM</p>
+
+            <p>
+                Monclova, Coahuila
+            </p>
+
+            <a
+            href="https://maps.app.goo.gl/zWUCDmP3m1VkE55A6"
+            target="_blank"
+            class="btn-evento">
+
+                Cómo Llegar
+
+            </a>
+
+        </div>
+
+        <div class="event-divider">
+
+            ♥
+
+        </div>
+
+        <div class="evento">
+
+            <div class="icono-evento">
+                🥂
+            </div>
+
+            <h3>Recepción</h3>
+
+            <h4>Salón Continental (Venecia)</h4>
+
+            <p>20 de Noviembre de 2026</p>
+
+            <p>8:30 PM</p>
+
+            <p>
+                Monclova, Coahuila
+            </p>
+
+            <a
+            href="https://maps.app.goo.gl/z4nU3MNXrpQziL2T8"
+            target="_blank"
+            class="btn-evento">
+
+                Cómo Llegar
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="galeria">
+<div class="ornament">
+
+    ✦ ♥ ✦
+
+</div>
+    <h2>Nuestra Historia</h2>
+
+    <div class="gallery-slider">
+
+        <button class="gallery-btn prev">
+            &#10094;
+        </button>
+
+        <div class="gallery-track">
+
+        </div>
+
+        <button class="gallery-btn next">
+            &#10095;
+        </button>
+
+    </div>
+
+    <div class="gallery-dots"></div>
+
+</section>
+
+<div id="lightbox">
+
+    <span id="close-lightbox">
+        &times;
+    </span>
+
+    <img id="lightbox-img">
+
+</div>
+
+<section id="vestimenta">
+<div class="ornament">
+
+    ✦ ♥ ✦
+
+</div>
+    <h2>Código de Vestimenta</h2>
+
+    <div class="dress-card">
+
+        <h3>Formal Elegante</h3>
+        <div class="dress-line"></div>
+        <p class="dress-note">
+
+        Se reserva el color blanco para la novia.
+
+        </p>
+        <p class="dress-subtitle">
+            Acompáñanos vistiendo tus mejores galas
+            para celebrar este día tan especial.
+        </p>
+
+        <div class="dress-container">
+
+            <div class="dress-item">
+
+               <img src="img/groom.png" class="dress-photo dress-photo-man">
+
+                <h4>Caballeros</h4>
+
+                <p>Traje formal</p>
+
+            </div>
+            
+            <div class="dress-divider">
+                ♥
+            </div>
+
+            <div class="dress-item">
+
+                <img src="img/bride.png" class="dress-photo dress-photo-woman">
+
+                <h4>Damas</h4>
+
+                <p>Vestido largo o cocktail</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="regalos">
+<div class="ornament">
+
+    ✦ ♥ ✦
+
+</div>
+    <h2>Mesa de Regalos</h2>
+
+    <p class="gift-intro">
+
+Su presencia es nuestro mejor regalo.
+
+<br><br>
+
+Si desean hacernos un obsequio,
+hemos preparado nuestras mesas de regalos
+para acompañarnos en esta nueva etapa.
+
+</p>
+
+    <div class="gift-container">
+
+        <div class="gift-card">
+
+            <div class="gift-icon">
+                🎁
+            </div>
+
+            <h3>Liverpool</h3>
+
+            <a
+            href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/52007538"
+            target="_blank">
+
+                Ver Mesa
+
+            </a>
+
+        </div>
+
+        <div class="gift-card">
+
+            <div class="gift-icon">
+                🎀
+            </div>
+
+            <h3>Cimaco</h3>
+
+            <a
+            href="https://mdr.cimaco.com.mx/evento/46799"
+            target="_blank">
+
+                Ver Mesa
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="fotos-evento">
+<div class="ornament">
+
+    ✦ ♥ ✦
+
+</div>
+    <h2>Comparte tus Fotos</h2>
+
+    <p>
+        Nos encantaría revivir este día a través de tus ojos.
+        Escanea el código QR para compartir tus fotografías
+        y videos con nosotros.
+    </p>
+
+    <img
+        src="Fotos/qr-fotos.png"
+        alt="QR Fotos"
+        class="qr-photo">
+
+</section>
+
+<section id="invitado-info">
+
+    <div class="ornament">
+        ✦ ♥ ✦
+    </div>
+
+    <h2>Invitación Personal</h2>
+
+    <div class="guest-card">
+
+        <h3 id="guest-name">
+            Cargando invitado...
+        </h3>
+
+        <p id="guest-passes">
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section id="rsvp">
+
+    <div class="ornament">
+        ✦ ♥ ✦
+    </div>
+
+    <h2>Confirma tu Asistencia</h2>
+    <div class="title-line"></div>
+
+    <p class="rsvp-text">
+        Tu presencia es muy importante para nosotros.
+        Te agradeceremos confirmar tu asistencia antes del
+        1 de octubre de 2026.
+    </p>
+    
+    <div id="rsvp-status"></div>
+
+    <div class="rsvp-buttons" id="rsvp-buttons">
+
+        <button class="rsvp-btn yes-btn"
+                onclick="confirmarAsistencia('SI')">
+
+            ✓ Sí asistiré
+
+        </button>
+
+        <button class="rsvp-btn no-btn"
+                onclick="confirmarAsistencia('NO')">
+
+            ✕ No podré asistir
+
+        </button>
+
+    </div>
+
+</section>
+
+<audio id="audio-player">
+
+    <source
+        src="music/cancion.mp4"
+        type="audio/mp4">
+
+</audio>
+
+<button id="music-btn">
+
+    ♪ Música
+
+</button>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
