@@ -81,7 +81,7 @@ linear-gradient(
     'Great Vibes',
     cursive;
 
-    font-size:5rem;
+    font-size:2rem;
 
     color:#d4af37;
     text-shadow:
@@ -97,6 +97,7 @@ linear-gradient(
     serif;
 
     letter-spacing:3px;
+    font-size:2rem;
 }
 
 .btn{
@@ -351,7 +352,7 @@ linear-gradient(
 
     .gallery-track img{
 
-        height:500px;
+        height:320px;
     }
 
 }
@@ -635,6 +636,23 @@ linear-gradient(
     0 10px 25px rgba(0,0,0,.05);
 
     transition:.4s;
+    
+}
+
+@media(max-width:768px){
+
+    .evento{
+
+        padding:30px 20px;
+
+    }
+
+    .evento h4{
+
+        font-size:2.2rem;
+
+    }
+
 }
 
 .evento:hover{
@@ -1003,7 +1021,7 @@ linear-gradient(
 
     color:#d4af37;
 
-    font-size:2rem;
+    font-size:1.2rem;
 
     margin-bottom:20px;
 }
@@ -1082,4 +1100,31 @@ linear-gradient(
     color:#d4af37;
 
     margin-top:5px;
+}
+
+@media(max-width:768px){
+
+    .overlay h1{
+        font-size:4rem;
+        line-height:0.9;
+    }
+
+    .overlay h2{
+        font-size:1.2rem;
+    }
+
+    .overlay h3{
+        font-size:1rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    #guest-name{
+
+        font-size:1rem;
+
+    }
+
 }
