@@ -352,7 +352,6 @@ if(!rsvpAbierto()){
     }
 
     fetch(
-        
         "https://script.google.com/macros/s/AKfycbyuOQygRgpKRpwSEhlSCGMLEtpQVygnbcHCeYGBzfDwzpQ0Fz37FjhL4cAWMSZf_QRq/exec"
         + "?id="
         + codigo
