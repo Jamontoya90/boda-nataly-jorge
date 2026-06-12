@@ -173,7 +173,7 @@ linear-gradient(
     line-height:1.8;
     margin-bottom:20px;
 }
-
+/*
 #evento{
 
     padding:80px 20px;
@@ -238,7 +238,7 @@ linear-gradient(
     text-decoration:none;
 
     border-radius:10px;
-}
+} */
 
 #galeria{
 
@@ -776,6 +776,8 @@ linear-gradient(
 
     margin:0 auto 50px auto;
 
+    margin-top:50px;
+
     text-align:center;
 
     font-size:1.15rem;
@@ -876,13 +878,14 @@ linear-gradient(
 
 .rsvp-text{
 
-    max-width:700px;
-
-    margin:0 auto 50px auto;
-
     font-size:1.15rem;
 
     line-height:1.8;
+
+    max-width:550px;
+
+    margin:0 auto 50px auto;
+
 }
 
 .rsvp-buttons{
@@ -938,14 +941,6 @@ linear-gradient(
     box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
-.rsvp-text{
-
-    max-width:550px;
-
-    margin:0 auto 50px auto;
-
-    line-height:1.8;
-}
 
 .title-line{
 
@@ -1049,9 +1044,11 @@ linear-gradient(
 
     margin:20px 0;
 
-    font-size:1.8rem;
+    margin-top:5px;
 
-    color:white;
+    font-size:2rem;
+
+    color:#d4af37;
 
     font-style:italic;
 
@@ -1060,15 +1057,6 @@ linear-gradient(
     opacity:.95;
 }
 
-
-#hero-guest{
-
-    font-size:2rem;
-
-    color:#d4af37;
-
-    margin-top:5px;
-}
 
 #hospedaje{
 
@@ -1305,10 +1293,26 @@ linear-gradient(
         word-wrap:break-word;
     }
 
-     .event-divider,
+    .event-divider,
     .divider{
 
         display:none;
+    }
+
+    .bank-container{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:20px;
+    }
+
+    .bank-card{
+
+        width:90%;
+
+        max-width:350px;
     }
 
 
