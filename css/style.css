@@ -343,19 +343,7 @@ linear-gradient(
     background:#d4af37;
 }
 
-@media(max-width:768px){
 
-    .gallery-track{
-
-        grid-template-columns:1fr;
-    }
-
-    .gallery-track img{
-
-        height:320px;
-    }
-
-}
 
 #lightbox{
 
@@ -639,21 +627,6 @@ linear-gradient(
     
 }
 
-@media(max-width:768px){
-
-    .evento{
-
-        padding:30px 20px;
-
-    }
-
-    .evento h4{
-
-        font-size:2.2rem;
-
-    }
-
-}
 
 .evento:hover{
 
@@ -1105,8 +1078,8 @@ linear-gradient(
 @media(max-width:768px){
 
     .overlay h1{
-        font-size:4rem;
-        line-height:0.9;
+        font-size:3rem;
+        line-height:1;
     }
 
     .overlay h2{
@@ -1117,9 +1090,6 @@ linear-gradient(
         font-size:1rem;
     }
 
-}
-
-@media(max-width:768px){
 
     #guest-name{
 
@@ -1133,10 +1103,11 @@ linear-gradient(
     width: 180px;
     opacity: 0.7;
     }
-    .location-container{
 
-    flex-direction:column;
-    align-items:center;
+    .eventos-container{
+
+        flex-direction:column;
+        gap:25px;
     }
 
       .gallery-track{
@@ -1154,6 +1125,53 @@ linear-gradient(
 
         font-size:4rem;
         line-height:1;
+    }
+
+    .gallery-track{
+
+        grid-template-columns:1fr;
+
+        max-width:450px;
+
+        margin:auto;
+    }
+
+    .gallery-track img{
+
+        height:250px;
+    }
+
+    .evento{
+
+        padding:30px 20px;
+
+    }
+
+    .evento h4{
+
+        font-size:2.2rem;
+
+    }
+
+    .dress-container{
+
+        gap:10px;
+    }
+
+    .dress-item{
+
+        width:140px;
+    }
+
+    .dress-photo-man,
+    .dress-photo-woman{
+
+        width:110px;
+    }
+
+    .dress-item p{
+
+        font-size:.9rem;
     }
 
 }
