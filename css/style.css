@@ -1143,7 +1143,9 @@ linear-gradient(
 
     .evento{
 
-        padding:30px 20px;
+        width:100%;
+        max-width:500px;
+        min-width:unset;
 
     }
 
@@ -1154,24 +1156,36 @@ linear-gradient(
     }
 
     .dress-container{
-
-        gap:10px;
+        flex-direction:column;
+        gap:20px;
     }
 
+    .dress-heart{
+
+        display:none;
+    }
     .dress-item{
 
-        width:140px;
+        width:100%;
     }
 
     .dress-photo-man,
     .dress-photo-woman{
 
-        width:110px;
+        width:90px;
     }
 
     .dress-item p{
 
-        font-size:.9rem;
+        font-size:.85rem;
+        word-wrap:break-word;
     }
+
+     .event-divider,
+    .divider{
+
+        display:none;
+    }
+
 
 }

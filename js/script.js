@@ -5,6 +5,9 @@ const weddingDate = new Date(
     "November 20, 2026 17:00:00"
 );
 
+const photosPerPage =
+window.innerWidth <= 768 ? 1 : 3;
+
 function rsvpAbierto(){
 
     const hoy = new Date();
@@ -119,13 +122,16 @@ const dotsContainer =
 document.querySelector(".gallery-dots");
 
 const totalPages =
-Math.ceil(photos.length / 3);
+Math.ceil(
+    photos.length /
+    photosPerPage
+);
 
 function renderGallery(){
 
     track.innerHTML = "";
 
-    for(let i=0;i<3;i++){
+    for(let i=0;i<photosPerPage;i++){
 
         let photoIndex =
         galleryIndex + i;
@@ -168,7 +174,7 @@ function updateDots(){
             "gallery-dot"
         );
 
-        if(i === galleryIndex/3){
+        if(i ===galleryIndex/photosPerPage){
 
             dot.classList.add(
                 "active"
@@ -185,7 +191,7 @@ document
 .querySelector(".next")
 .addEventListener("click",()=>{
 
-    galleryIndex += 3;
+    galleryIndex += photosPerPage;
 
     if(galleryIndex >= photos.length){
 
@@ -200,12 +206,12 @@ document
 .querySelector(".prev")
 .addEventListener("click",()=>{
 
-    galleryIndex -= 3;
+    galleryIndex -= photosPerPage;
 
     if(galleryIndex < 0){
 
         galleryIndex =
-        (totalPages-1)*3;
+        (totalPages-1)*photosPerPage;
     }
 
     renderGallery();
@@ -214,7 +220,7 @@ document
 
 setInterval(()=>{
 
-    galleryIndex += 3;
+    galleryIndex += photosPerPage;
 
     if(galleryIndex >= photos.length){
 
