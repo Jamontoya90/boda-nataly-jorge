@@ -353,7 +353,7 @@ if(!rsvpAbierto()){
 
     fetch(
         
-        "https://script.google.com/macros/s/AKfycbxaLkVgTXRY9cLXqgYpr35uTfviuUglXCXIQkQRuI83PbVTjG3TgVrFuF4w2OBRfmvT/exec"
+        "https://script.google.com/macros/s/AKfycbz2dh4l3cFqotjbOBB5f03W9-kW1vkKNnrI9474uJKdFHKl-lQLpKgBy_w_7zfmsYXn/exec"
         + "?id="
         + codigo
         + "&respuesta="
