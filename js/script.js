@@ -352,7 +352,8 @@ if(!rsvpAbierto()){
     }
 
     fetch(
-        "https://script.google.com/macros/s/AKfycbztkV9FvfkVtYETl2vQ5Hw8YNYB9hAP_ID5tD_2qHCMhZjjyMuzRNzkX_jsZI_22GKK/exec"
+        
+        "https://script.google.com/macros/s/AKfycbxaLkVgTXRY9cLXqgYpr35uTfviuUglXCXIQkQRuI83PbVTjG3TgVrFuF4w2OBRfmvT/exec"
         + "?id="
         + codigo
         + "&respuesta="
