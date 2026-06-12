@@ -81,7 +81,7 @@ linear-gradient(
     'Great Vibes',
     cursive;
 
-    font-size:2rem;
+    font-size:7rem;
 
     color:#d4af37;
     text-shadow:
@@ -612,6 +612,8 @@ linear-gradient(
 
     max-width:450px;
 
+    min-height:650px;
+
     background:white;
 
     border:1px solid #d4af37;
@@ -624,7 +626,6 @@ linear-gradient(
     0 10px 25px rgba(0,0,0,.05);
 
     transition:.4s;
-    
 }
 
 
@@ -662,6 +663,8 @@ linear-gradient(
     font-size:2rem;
 
     margin-bottom:20px;
+
+    min-height:100px;
 }
 
 .evento p{
@@ -757,6 +760,7 @@ linear-gradient(
 
 }
 
+
 .dress-item h4{
 
     color:#d4af37;
@@ -809,16 +813,7 @@ linear-gradient(
     letter-spacing:10px;
 }
 
-.dress-divider{
 
-    color:#d4af37;
-
-    font-size:2rem;
-
-    align-self:center;
-
-    margin-top:-20px;
-}
 
 .dress-photo{
 
@@ -1162,7 +1157,7 @@ linear-gradient(
 
     .dress-divider{
 
-        display:none;
+        display:none !important;
     }
     .dress-item{
 
