@@ -1345,5 +1345,26 @@ linear-gradient(
         max-width:350px;
     }
 
+    #adultos{
+
+    padding:80px 20px;
+}
+
+#adultos h2{
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+}
+
+.adultos-text{
+
+    max-width:95%;
+
+    font-size:1rem;
+
+    line-height:1.7;
+}
+
 
 }
