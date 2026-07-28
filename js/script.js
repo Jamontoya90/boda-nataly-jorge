@@ -352,7 +352,7 @@ if(!rsvpAbierto()){
     }
 
     fetch(
-        "https://script.google.com/macros/s/AKfycbyuOQygRgpKRpwSEhlSCGMLEtpQVygnbcHCeYGBzfDwzpQ0Fz37FjhL4cAWMSZf_QRq/exec"
+        "https://script.google.com/macros/s/AKfycbxqdfFzz5poCNhYarm3Cx-Q_cCjqDr8vmBYzZl2MPicKoF0SBHrlgtzmVY-7ci6s-7X/exec"
         + "?id="
         + codigo
         + "&respuesta="
@@ -405,7 +405,7 @@ function cargarInvitado(){
     if(!codigo) return;
 
     fetch(
-        "https://script.google.com/macros/s/AKfycbyuOQygRgpKRpwSEhlSCGMLEtpQVygnbcHCeYGBzfDwzpQ0Fz37FjhL4cAWMSZf_QRq/exec?id="
+        "https://script.google.com/macros/s/AKfycbxqdfFzz5poCNhYarm3Cx-Q_cCjqDr8vmBYzZl2MPicKoF0SBHrlgtzmVY-7ci6s-7X/exec?id="
         + codigo
     )
     .then(response => response.json())
