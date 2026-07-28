@@ -405,7 +405,7 @@ function cargarInvitado(){
     if(!codigo) return;
 
     fetch(
-        "https://script.google.com/macros/s/AKfycbztkV9FvfkVtYETl2vQ5Hw8YNYB9hAP_ID5tD_2qHCMhZjjyMuzRNzkX_jsZI_22GKK/exec?id="
+        "https://script.google.com/macros/s/AKfycbyuOQygRgpKRpwSEhlSCGMLEtpQVygnbcHCeYGBzfDwzpQ0Fz37FjhL4cAWMSZf_QRq/exec?id="
         + codigo
     )
     .then(response => response.json())
@@ -440,6 +440,10 @@ function cargarInvitado(){
             document.getElementById(
                 "rsvp-buttons"
             );
+
+        const nombreNovio = data.nombreNovio || "Jorge";
+
+            document.getElementById("novio").textContent = nombreNovio;
 
         if(!rsvpAbierto()){
 
