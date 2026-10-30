@@ -1,5 +1,5 @@
 const fechaLimite =
-    new Date("2026-12-10T23:59:59");
+    new Date("2026-11-10T23:59:59");
 
 const weddingDate = new Date(
     "November 20, 2026 17:00:00"
